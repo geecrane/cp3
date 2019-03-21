@@ -1,0 +1,27 @@
+Tricks
+
+Backtrack:
+  - 8 queens problems using bitmask
+    - only n bits bitmask for left and right diagonal
+    - iterate through all k set bits in O(k)
+  - is better than complete iterative search of all subsets(filtering): 
+    - if early pruning pruning possible
+    - also dp could be used for small states
+
+DP:
+  - prefixsum, kadane's algorithm: 1D O(n) and 2D O(n^3) 
+  - O(nlogk) output-sensitvie LIS (only works for strictly increasing sequence)
+  - ways for coin change (bottom-up approach using O(n) space)
+  - bitmask for state
+
+Graph Traversal:
+
+  -Connected components(dfs/bfs): count number components in graph
+  -Floodfill(dfs)
+    - trick to explore 2D grid (N, S, W, E ...)
+    - count size of connected component while labeling.
+  -topological sort
+    -Method1: Tarjan's algorithm: (DFS) post order traversal
+    -Method2: Kahn's algorithm(similar to bfs). Use if there are constraints on the sort order.
+    -use backtrack to find all sorts
+  
